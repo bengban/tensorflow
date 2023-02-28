@@ -19,6 +19,10 @@ Pod::Spec.new do |s|
 
   s.module_name = 'TensorFlowLiteC'
   s.library = 'c++'
+  # Note the `///`, two from the `file://` and one from the `/path`.
+  #s.source       = { :http => "file:///path/to/TensorFlowLiteC_framework.zip" }
+
+  s.vendored_frameworks = 'TensorFlowLiteC.framework'
 
   s.default_subspec = 'Core'
 
