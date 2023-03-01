@@ -27,11 +27,11 @@ Pod::Spec.new do |s|
   # frameworks依赖
   s.vendored_frameworks = 'TensorFlowLiteC.framework'
 
-  s.default_subspec = 'Core'
+  # s.default_subspec = 'Core'
 
-  s.subspec 'Core' do |core|
-    core.vendored_frameworks = 'Frameworks/TensorFlowLiteC.framework'
-  end
+  # s.subspec 'Core' do |core|
+  #   core.vendored_frameworks = 'Frameworks/TensorFlowLiteC.framework'
+  # end
 
   # s.subspec 'CoreML' do |coreml|
   #   coreml.weak_framework = 'CoreML'
