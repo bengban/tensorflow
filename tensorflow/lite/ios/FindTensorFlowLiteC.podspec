@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'Apache' }
   s.homepage         = 'https://github.com/bengban/tensorflow'
 #  s.source           = { :http => "https://dl.google.com/dl/cpdc/a09140b298d599e0/TensorFlowLiteC-#{s.version}.tar.gz" }
-  s.source           = { :http => "http://rqs4w3g0m.hd-bkt.clouddn.com/TensorFlowLiteC_framework.zip" }
+  s.source           = { :http => "https://public.findpiano.cn/TensorFlowLiteC_framework.zip" }
 #  blob:https://github.com/180ac02d-4985-4357-b2be-eaecaed76acf
   s.summary          = 'TensorFlow Lite'
   s.description      = <<-DESC
@@ -35,13 +35,13 @@ Pod::Spec.new do |s|
 
   s.subspec 'CoreML' do |coreml|
     coreml.weak_framework = 'CoreML'
-    coreml.dependency 'FindTensorFlowLiteC/Core'
+    coreml.dependency 'TensorFlowLiteC/Core'
     coreml.vendored_frameworks = 'Frameworks/TensorFlowLiteCCoreML.framework'
   end
 
   s.subspec 'Metal' do |metal|
     metal.weak_framework = 'Metal'
-    metal.dependency 'FindTensorFlowLiteC/Core'
+    metal.dependency 'TensorFlowLiteC/Core'
     metal.vendored_frameworks = 'Frameworks/TensorFlowLiteCMetal.framework'
   end
 end
