@@ -33,15 +33,15 @@ Pod::Spec.new do |s|
     core.vendored_frameworks = 'Frameworks/TensorFlowLiteC.framework'
   end
 
-  s.subspec 'CoreML' do |coreml|
-    coreml.weak_framework = 'CoreML'
-    coreml.dependency 'TensorFlowLiteC/Core'
-    coreml.vendored_frameworks = 'Frameworks/TensorFlowLiteCCoreML.framework'
-  end
+  # s.subspec 'CoreML' do |coreml|
+  #   coreml.weak_framework = 'CoreML'
+  #   coreml.dependency 'TensorFlowLiteC/Core'
+  #   coreml.vendored_frameworks = 'Frameworks/TensorFlowLiteCCoreML.framework'
+  # end
 
-  s.subspec 'Metal' do |metal|
-    metal.weak_framework = 'Metal'
-    metal.dependency 'TensorFlowLiteC/Core'
-    metal.vendored_frameworks = 'Frameworks/TensorFlowLiteCMetal.framework'
-  end
+  # s.subspec 'Metal' do |metal|
+  #   metal.weak_framework = 'Metal'
+  #   metal.dependency 'TensorFlowLiteC/Core'
+  #   metal.vendored_frameworks = 'Frameworks/TensorFlowLiteCMetal.framework'
+  # end
 end
