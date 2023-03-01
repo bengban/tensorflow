@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
   # Note the `///`, two from the `file://` and one from the `/path`.
   #s.source       = { :http => "file:///path/to/TensorFlowLiteC_framework.zip" }
 
+  # frameworks依赖
   s.vendored_frameworks = 'TensorFlowLiteC.framework'
 
   s.default_subspec = 'Core'
